@@ -207,7 +207,6 @@ function App() {
              <Button className='bg-danger my-3 mx-2 text-white p-2 h-50 text-center '>Subscribe</Button>
                   </form>
                   <a href="#nav" style={{position:'absolute',right:'0px',bottom:'0px',marginBottom:'10rem'}}> <Button className='bg-dark m-3 p-5 text-white p-2 h-50 text-center'><i className="fa fa-arrow-up text-white"></i> </Button> </a>
-                 
               </div>
                 </div>
                   </div>
