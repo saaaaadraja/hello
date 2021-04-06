@@ -1,38 +1,47 @@
-.App {
+.card {
+  transition: all 0.2s linear;
+}
+.card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 6px 6px 11px white;
+}
+.nav-link {
+  font-family: "Dela Gothic One", cursive;
+  height: 8vh;
+  width: 10vw;
   text-align: center;
+  border-radius: 20px;
+  font-size: 19px;
+  padding-top: 20px;
+  transition: all 0.3s linear;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link:hover {
+  background-color: rgba(128, 128, 128, 0.267);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-barnd {
+  font-family: "Dela Gothic One", cursive;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading {
+  box-shadow: 5px 5px 10px white;
+  font-family: "Dela Gothic One", cursive;
 }
-
-.App-link {
-  color: #61dafb;
+.card-title {
+  margin-left: 40%;
+  margin-bottom: 2rem;
+  width: 10rem;
+  box-shadow: 5px 5px 10px white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body {
+  text-align: center;
+  overflow: hidden;
+}
+.back {
+  background: url("./dark.jpg");
+  width: 100%;
+  height: 100%;
+  position: center;
+}
+.navbar {
+  border-bottom: 1px solid gray;
 }
