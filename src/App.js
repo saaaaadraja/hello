@@ -56,7 +56,7 @@ function App() {
 :
 (
     <>
-    <nav className='navbar navbar-expand-lg  navbar-light navbar-left h-25'>
+    <nav id='nav' className='navbar navbar-expand-lg  navbar-light navbar-left h-25'>
            <div className="container-fluid py-3">
            <motion.a initial={{x:'100vw'}} animate={{x:0}} transition={{delay:0.5,type:'spring'}} className='navbar-barnd h1 mx-1 text-white' href='#home' > COMPANY </motion.a>
            <button className='navbar-toggler  bg-primary' type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' >
@@ -99,11 +99,11 @@ function App() {
                     <div className="row py-4 my-5 justify-content-center">          
 {
     services.map((i)=>{
- return <div key={i} className="col-12 py-2 my-3">
-                            <div className="card  text-white" style={{display:'flex',flexDirection:'row'}}>
-                                 <img style={{height:'30vh',width:'30vw',objectFit:'cover'}}  src={logo} alt="logo"/>
+ return <div key={i} className="col-md-4 col-sm-12 py-2 my-3">
+                            <div className="card  text-white" >
+                                 <img className='card-img-top' style={{height:'100%',width:'100%',objectFit:'cover'}}  src={logo} alt="logo"/>
                                  <div className="card-body justify-content-center" style={{backgroundColor:'black'}}>
-                                 <h4 className='card-title'>Logo</h4>
+                                 {/* <h4 className='card-title'>Logo</h4> */}
                                  <p className='card-text px-4' style={{marginBottom:'2rem'}}
                                  > Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint deleniti impedit vero excepturi nostrum. Dolorum ullam asperiores facere explicabo alias. </p>
                                  <Button  className='bg-primary w-25 h-15 p-3 my-4 text-white' style={{boxShadow:'2px 2px 5px gray'}}>Details</Button>
@@ -158,46 +158,47 @@ function App() {
                   </div>
                     <div className="row justify-content-center px-3 my-5 py-5"  id='contact'>
                 <div className="col-md-3  col-sm-6">
-                <p className='h4 my-5  text-white'>Key Links</p>
+                <p className='h4 my-5 head text-white'>Key Links</p>
                 <ul className='p-0'>
-                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 ' href="#home" >Home</a></li>
-                    <li className='my-3' style={{listStyle:'none'}}><a className='h5' href="#services">Services</a></li>
-                    <li className='my-3' style={{listStyle:'none'}}><a className='h5' href="#clients">Clients</a></li>
-                    <li className='my-3' style={{listStyle:'none'}}><a className='h5' href="#contact">Contact</a></li>
+                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 text' href="#home" >Home</a></li>
+                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 text' href="#services">Services</a></li>
+                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 text' href="#clients">Clients</a></li>
+                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 text' href="#contact">Contact</a></li>
                 </ul>
                 </div>
                 <div className="col-md-3 col-sm-6">
-                <p className='h5 my-5  text-white'>Key Links</p>
+                <p className='h5 my-5 head  text-white'>Key Links</p>
                 <ul className='p-0'>
-                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 ' href="#home" >Cookie Policy</a></li>
-                    <li className='my-3' style={{listStyle:'none'}}><a className='h5' href="#services">Privacy Policy</a></li>
-                    <li className='my-3' style={{listStyle:'none'}}><a className='h5' href="#clients">Terms of Use</a></li>
+                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 text ' href="#home" >Cookie Policy</a></li>
+                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 text' href="#services">Privacy Policy</a></li>
+                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 text' href="#clients">Terms of Use</a></li>
                 </ul>
                 </div>
                 <div className="col-md-3 col-sm-12">
-                <p className='h4 my-5  text-white'>Contact US</p>
+                <p className='h4 my-5 head text-white'>Contact US</p>
                 <div className='my-3'>
-                <p className='text-white py-2 h5'>Adress:</p>
-                <p className='text-primary h5 '>house#``12...............................</p>
+                <p className='text-white head py-2 h4 text'>Adress:</p>
+                <p className=' h5 text'>house#``12.............. ,</p>
+                <p className=' h5 text'>street#13......</p>
                 </div>
                 <div className='my-3'>
-                <p className='text-white py-2 h5'>TelePhone:</p>
-                <p className='text-primary h5 '>For Custom Engineering</p>
-                <p className='text-primary h5 '>T:+11111111111</p>
-                   <p className='text-primary h5 '>For Managed Services</p>
-                <p className='text-primary h5 '>T:+11111111111</p>
+                <p className='text-white head py-2 h4'>TelePhone:</p>
+                <p className=' h5 text'>For Custom Engineering</p>
+                <p className=' h5 text'>T:+11111111111</p>
+                   <p className=' h5 text'>For Managed Services</p>
+                <p className=' h5 text'>T:+11111111111</p>
                 </div>
                 </div>
                 <div className="col-md-3 col-sm-12">
-                <p className='h4 my-5  text-white'>Follow US</p>
+                <p className='h4 my-5 head text-white'>Follow US</p>
                 <ul className='p-0'>
-                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 ' href="#home" >Home</a></li>
-                    <li className='my-3' style={{listStyle:'none'}}><a className='h5' href="#services">Services</a></li>
-                    <li className='my-3' style={{listStyle:'none'}}><a className='h5' href="#clients">Clients</a></li>
-                    <li className='my-3' style={{listStyle:'none'}}><a className='h5' href="#contact">Contact</a></li>
+                    <li className='my-3' style={{listStyle:'https://www.facebook.com/'}}><a className='h5 text' href="#home" >Facebook</a></li>
+                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 text' href="https://www.youtube.com/">Youtube</a></li>
+                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 text' href="https://www.twitter.com/">Twitter</a></li>
+                    <li className='my-3' style={{listStyle:'none'}}><a className='h5 text' href="https://www.github.com/">Github</a></li>
                 </ul>
-                <p className='h5 my-4  text-white'>Subscribe US</p>
-              <p className='h5 text-primary'>Subscribe Us today to receive cyber security news,updates and much more</p>
+                <p className='h4 my-4  head text-white'>Subscribe US</p>
+              <p className='h5  text'>Subscribe Us today to receive cyber security news,updates and much more</p>
               <div>
                   <form style={{display:'flex',flexDirection:'row'}} >
            <div className="form-group my-3 text-white">
@@ -205,7 +206,7 @@ function App() {
             </div>
              <Button className='bg-danger my-3 mx-2 text-white p-2 h-50 text-center '>Subscribe</Button>
                   </form>
-                  <a href="#home" style={{right:'0'}}> <Button className='bg-primary m-3 p-5 text-white p-2 h-50 text-center '><i className="fa fa-arrow-up text-white" aria-hidden="true"></i> </Button> </a>
+                  <a href="#nav" style={{position:'absolute',right:'0px',bottom:'0px',marginBottom:'10rem'}}> <Button className='bg-dark m-3 p-5 text-white p-2 h-50 text-center'><i className="fa fa-arrow-up text-white"></i> </Button> </a>
                  
               </div>
                 </div>
